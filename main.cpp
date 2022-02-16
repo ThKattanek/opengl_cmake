@@ -30,6 +30,10 @@ int main()
 		return -1;
 	}
 
+	int major, minor, rev;
+	glfwGetVersion(&major, &minor, &rev);
+	cout << "OpenGL Version: " << major << "." << minor << "." << rev << endl;
+
 	const GLfloat vertices[] = {
 		0.0f,  0.5f,
 		0.5f, -0.5f,
